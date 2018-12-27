@@ -1,0 +1,9 @@
+#TF中的接口
+将欧拉角生成四元数
+```
+    geometry_msgs::Quaternion ts;
+    geometry_msgs::PoseStamped pub_pose;
+    ts = tf::createQuaternionMsgFromYaw(1.57);
+
+```
+注意几个函数的区别，要想生成消息类型的四元数，一定要有MSG
